@@ -9,7 +9,7 @@ import com.example.crudwithrestapi.R
 import com.example.crudwithrestapi.home.data.PostModel
 import kotlinx.android.synthetic.main.home_rv_item_view.view.*
 
-class HomeAdapter: RecyclerView.Adapter<HomeAdapter.HomeViewHolder>(){
+class HomeAdapter(var listener:HomeListener): RecyclerView.Adapter<HomeAdapter.HomeViewHolder>(){
 
     private var data : ArrayList<PostModel>?=null
 

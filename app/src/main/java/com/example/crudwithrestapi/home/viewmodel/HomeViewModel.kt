@@ -4,10 +4,11 @@ import android.app.Application
 import androidx.lifecycle.AndroidViewModel
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
+import androidx.lifecycle.ViewModel
 import com.example.crudwithrestapi.home.data.HomeRepository
 import com.example.crudwithrestapi.home.data.PostModel
 
-class HomeViewModel {
+class HomeViewModel : ViewModel() {
     private var homeRepository:HomeRepository?=null
     var postModelListLiveData : LiveData<List<PostModel>>?=null
     var createPostLiveData:LiveData<PostModel>?=null
