@@ -3,6 +3,7 @@ package com.example.crudwithrestapi.home.ui
 import android.app.Dialog
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
 import android.view.*
 import android.widget.Toast
 import androidx.lifecycle.Observer
@@ -67,9 +68,9 @@ class MainActivity : AppCompatActivity(), HomeAdapter.HomeListener {
 
             if (title.isNotEmpty() && body.isNotEmpty()){
                 val postModel = PostModel()
-                postModel.userId = 1
-                postModel.title = title
-                postModel.body = body
+                postModel.name = ""
+                postModel.userName = title
+                postModel.roleid = body
 
                 vm.createPost(postModel)
 

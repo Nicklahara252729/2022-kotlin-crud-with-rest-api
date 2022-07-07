@@ -1,8 +1,15 @@
 package com.example.crudwithrestapi.home.data
 
-class PostModel {
-    var userId:Int?=0;
-    var id:Int?=0;
-    var title:String?="";
-    var body:String?=""
-}
+//import android.os.Parcelable
+//import kotlinx.parcelize.Parcelize
+//
+//@Parcelize
+class PostModel(
+    var id      : Int?=0,
+    var name    : String?="",
+    var userName: String?="",
+    var password: String?="",
+    var roleid  : String?="",
+    var roleName: String?="",
+    var photo   : String?=""
+)

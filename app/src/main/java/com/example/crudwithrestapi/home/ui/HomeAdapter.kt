@@ -52,8 +52,8 @@ class HomeAdapter(var listener:HomeListener): RecyclerView.Adapter<HomeAdapter.H
 
     class HomeViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView){
         fun bindView(item: PostModel?) {
-            itemView.tv_home_item_title.text = item?.title
-            itemView.tv_home_item_body.text = item?.body
+            itemView.tv_home_item_title.text = item?.name
+            itemView.tv_home_item_body.text = item?.userName
         }
 
     }

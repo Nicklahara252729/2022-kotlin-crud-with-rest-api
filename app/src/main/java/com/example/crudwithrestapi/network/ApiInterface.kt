@@ -5,12 +5,12 @@ import retrofit2.Call
 import retrofit2.http.*
 
 interface ApiInterface {
-    @GET("posts")
+    @GET("user/view")
     fun fetchAllPosts(): Call<List<PostModel>>
 
-    @POST("posts")
+    @POST("user/view")
     fun createPost(@Body postModel: PostModel):Call<PostModel>
 
-    @DELETE("posts/{id}")
+    @DELETE("user/view")
     fun deletePost(@Path("id") id:Int):Call<String>
 }
